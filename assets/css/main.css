@@ -1,0 +1,647 @@
+:root {
+  --primary-color:#2B6542;
+  --secondary-color:#C19333;
+  --text-color-dark:#000000;
+  --text-color-white:#ffffff;
+  --text-color-gray:#737373;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Tajawal", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color);
+}
+
+a {
+  transition: all 0.8s;
+  text-decoration: none;
+  box-shadow: none !important;
+}
+
+a:hover {
+  transition: all 0.8s;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+.arabic-dir {
+  direction: rtl;
+}
+
+.navbar .navbar-toggler {
+  color: var(--text-color-white);
+  border: 1px solid var(--text-color-white);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color-white);
+  font-size: 10px;
+  border-radius: 25px;
+  padding: 5px 5px;
+  margin-right: 0.5rem;
+}
+.login-btn:hover, .login-btn:active {
+  color: var(--text-color-white);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.login-btn > svg:nth-child(1) {
+  font-size: 16px;
+  margin: 0px 4px;
+}
+.login-btn span {
+  font-size: 10px;
+  margin: 0 4px;
+}
+.login-btn > svg:nth-child(2) {
+  font-size: 11px;
+}
+
+.login-menue {
+  right: 0;
+  text-align: right;
+  font-size: 13px;
+  background-color: var(--secondary-color);
+}
+
+.serv-sec .btn {
+  background-color: var(--secondary-color);
+  color: var(--text-color-white);
+  border: 0px;
+  font-size: 16px;
+  padding: 14px 18px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  transition: 500ms ease;
+  background: transparent;
+  padding: 2rem 0rem;
+}
+header .navbar {
+  box-shadow: none;
+}
+header .navbar-brand img {
+  width: 140px;
+}
+header .navbar-nav .nav-item .nav-link {
+  font-size: 10px;
+  color: var(--text-color-white);
+  font-weight: bold;
+}
+
+header.scrolled {
+  background: var(--primary-color);
+  top: 0;
+  padding: 0.7rem 0rem;
+}
+
+.bg-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.bg-video video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.bg-video .overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(33, 37, 41, 0.7215686275), rgba(33, 37, 41, 0.4509803922));
+  z-index: 2;
+}
+.bg-video h1 {
+  margin-top: 80px;
+  color: var(--text-color-white);
+  z-index: 99;
+  text-align: center;
+  font-size: 33px;
+  font-weight: lighter;
+}
+.bg-video p {
+  color: var(--text-color-white);
+  z-index: 99;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.bg-video .links {
+  color: var(--text-color-white);
+  z-index: 99;
+  text-align: center;
+  font-size: 14px;
+}
+.bg-video .links a {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: bold;
+  margin: auto;
+  box-shadow: none;
+}
+
+.about-center {
+  padding: 9rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-center .title {
+  background-image: url(https://saac.gov.sa/assets/images/logo-back.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 9rem 0rem;
+  background-position: right;
+}
+.about-center .title p {
+  color: var(--primary-color);
+  line-height: 2;
+  font-size: 24px;
+  margin: 0px;
+}
+.about-center .title h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 30px;
+}
+.about-center p:nth-child(1) {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-color-gray);
+  line-height: 2;
+  font-weight: 600;
+}
+.about-center p:nth-child(2),
+.about-center p:nth-child(3) {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-color-gray);
+  line-height: 2;
+  font-weight: 600;
+}
+.about-center p:nth-child(2) span,
+.about-center p:nth-child(3) span {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.fields:hover .content-field {
+  width: 100%;
+  transition: 1s all;
+}
+.fields .card-box-one,
+.fields .card-box-two,
+.fields .card-box-three,
+.fields .card-box-four {
+  width: 100%;
+  height: 330px;
+  background-size: cover;
+  border-radius: 0px;
+  position: relative;
+  border: 0px;
+  transition: 0.5s all;
+}
+.fields .card-box-one:hover,
+.fields .card-box-two:hover,
+.fields .card-box-three:hover,
+.fields .card-box-four:hover {
+  width: 120%;
+  transition: 0.5s all;
+}
+.fields .card-box-one:hover .overlay .content-field,
+.fields .card-box-two:hover .overlay .content-field,
+.fields .card-box-three:hover .overlay .content-field,
+.fields .card-box-four:hover .overlay .content-field {
+  opacity: 1;
+}
+.fields .card-box-one:hover .overlay h6,
+.fields .card-box-two:hover .overlay h6,
+.fields .card-box-three:hover .overlay h6,
+.fields .card-box-four:hover .overlay h6 {
+  width: 100%;
+}
+.fields .card-box-one .overlay,
+.fields .card-box-two .overlay,
+.fields .card-box-three .overlay,
+.fields .card-box-four .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fields .card-box-one .overlay h6,
+.fields .card-box-two .overlay h6,
+.fields .card-box-three .overlay h6,
+.fields .card-box-four .overlay h6 {
+  color: var(--text-color-white);
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  font-size: 25px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.fields .card-box-one .overlay .content-field,
+.fields .card-box-two .overlay .content-field,
+.fields .card-box-three .overlay .content-field,
+.fields .card-box-four .overlay .content-field {
+  top: 50%;
+  padding: 20px;
+  position: absolute;
+  color: var(--text-color-white);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.8;
+  transition: 1s all;
+  opacity: 0;
+}
+.fields .card-box-one .overlay .content-field p,
+.fields .card-box-two .overlay .content-field p,
+.fields .card-box-three .overlay .content-field p,
+.fields .card-box-four .overlay .content-field p {
+  color: var(--text-color-white);
+  height: 50px;
+  overflow: hidden;
+}
+.fields .card-box-one .overlay .content-field a,
+.fields .card-box-two .overlay .content-field a,
+.fields .card-box-three .overlay .content-field a,
+.fields .card-box-four .overlay .content-field a {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.fields .card-box-one {
+  background-image: url(https://saac.gov.sa/media/iuikfkbr/service.svg);
+}
+.fields .card-box-two {
+  background-image: url(https://saac.gov.sa/media/jradzhky/maksym-kaharlytskyi-u13zbf4r56a-unsplash.jpeg);
+}
+.fields .card-box-three {
+  background-image: url(https://saac.gov.sa/media/siqjkijl/service2.svg);
+}
+.fields .card-box-four {
+  background-image: url(https://saac.gov.sa/media/ikcdjifb/%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF-%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%AD-%D8%A7%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%84%D8%A7%D9%84-02.svg);
+}
+
+.about-field {
+  padding: 9rem 0;
+}
+.about-field .title {
+  margin-bottom: 20px;
+}
+.about-field .title p {
+  color: var(--primary-color);
+  line-height: 2;
+  font-size: 24px;
+  margin: 0;
+}
+.about-field .title h5 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 30px;
+}
+.about-field .content {
+  margin-top: 2rem;
+}
+.about-field .content p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-color-gray);
+  line-height: 2;
+  font-weight: 600;
+}
+.about-field .content a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 12px;
+}
+.about-field .content a svg {
+  color: var(--secondary-color);
+}
+.about-field img.field-img {
+  width: 100%;
+  height: 330px;
+  margin-top: 30px;
+  margin-inline-start: 70px;
+}
+
+.News {
+  background-color: #F2F2F2;
+  padding: 9rem 0rem;
+}
+.News h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.News .card {
+  height: 230px;
+  border-radius: 0px;
+  border: 0px;
+  width: 100%;
+  transition: 0.5s all;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.News .card:hover {
+  transform: scale(0.9);
+  transition: 0.5s all;
+}
+.News .card .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(33, 37, 41, 0.7215686275), rgba(33, 37, 41, 0.6784313725));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.News .card .overlay .content-field {
+  top: 44%;
+  padding: 20px;
+  position: absolute;
+  color: var(--text-color-white);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+  transition: 1s all;
+}
+.News .card .overlay .content-field p {
+  color: var(--text-color-white);
+  margin-bottom: 0rem;
+  height: 65px;
+  overflow: hidden;
+}
+.News .card .overlay .content-field svg {
+  color: var(--secondary-color);
+  font-size: 22px;
+  margin-inline-end: 5px;
+}
+.News .link {
+  color: var(--secondary-color);
+  display: block;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 30px;
+}
+.News .link svg {
+  font-size: 15px;
+}
+
+.numbers-center {
+  background-image: url(https://saac.gov.sa/assets/images/curve-img.svg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 20rem;
+  background-position: center;
+}
+.numbers-center::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0%;
+  height: 295px;
+  z-index: 0;
+  background: #f2f2f2;
+  border-radius: 82%;
+}
+.numbers-center .title {
+  text-align: center;
+  margin-top: 16rem;
+}
+.numbers-center .title h3 {
+  font-size: 30px;
+  line-height: 1.8;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.numbers-center .box-numbers {
+  text-align: center;
+  margin-top: 35px;
+}
+.numbers-center .box-numbers span {
+  color: var(--secondary-color);
+  line-height: 1.8;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.numbers-center .box-numbers h6 {
+  color: var(--text-color-white);
+  line-height: 1.8;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.organizations h3 {
+  font-size: 25px;
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 2;
+  font-weight: 600;
+}
+.organizations p {
+  font-size: 16px;
+  color: var(--text-color-gray);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.organizations .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.organizations .owl-carousel .owl-nav {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.organizations .owl-carousel .owl-nav button[type=button] {
+  margin-inline-end: 20px;
+  transition: 1s all;
+}
+.organizations .owl-carousel .owl-nav button[type=button]:hover {
+  background-color: var(--text-color-gray);
+  border-radius: 10px;
+}
+.organizations img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer .top-footer {
+  background: linear-gradient(0deg, #12332D -218.87%, #2B663F 261.41%);
+  padding: 20px;
+}
+.footer .top-footer .contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .top-footer .contact-links li {
+  list-style: none;
+  display: inline-block;
+  color: var(--text-color-white);
+  font-size: 12px;
+  font-weight: 600;
+}
+.footer .top-footer .contact-links li p {
+  font-size: 12px;
+  color: var(--text-color-white);
+  display: flex;
+  align-items: center;
+}
+.footer .top-footer .contact-links li p svg {
+  font-size: 20px;
+  margin: 0px 5px;
+  color: var(--secondary-color);
+}
+.footer .bottom-footer {
+  background-color: var(--primary-color);
+  padding: 11px;
+}
+.footer .bottom-footer img {
+  width: 140px;
+}
+.footer .bottom-footer .text p {
+  color: var(--text-color-white);
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  header {
+    background-color: var(--primary-color);
+    padding: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .boxs-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxs-card .card-box-one,
+  .boxs-card .card-box-two,
+  .boxs-card .card-box-three,
+  .boxs-card .card-box-four {
+    margin-bottom: 15px;
+  }
+  .about-field img.field-img {
+    margin-inline-start: 0px;
+  }
+  .numbers-center {
+    height: auto;
+  }
+  .footer .top-footer .contact-links,
+  .footer .bottom-footer .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (min-width: 992px) {
+  .boxs-card {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-field img.field-img {
+    margin-inline-start: 70px;
+  }
+  .numbers-center {
+    height: 700px;
+  }
+  .footer .top-footer .contact-links,
+  .footer .bottom-footer .contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=main.css.map */

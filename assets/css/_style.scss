@@ -1,0 +1,75 @@
+
+
+:root{
+    --primary-color:#2B6542;
+    --secondary-color:#C19333;
+    --text-color-dark:#000000;
+    --text-color-white:#ffffff;
+    --text-color-gray:#737373;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+  body {
+    font-family: 'Tajawal', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color:var(--primary-color);
+    border-radius: 2rem;
+    transition: .3s;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background-color:var(--primary-color);
+  }
+  
+  a {
+    transition: all .8s;
+    text-decoration: none;
+    box-shadow: none !important;
+  }
+  a:hover {
+    transition: all .8s;
+  }
+
+  ul{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .btn{
+    box-shadow: none !important;
+  }
+
+  .btn:hover{
+    box-shadow: none !important;
+  }
+  
+  .form-control:focus,
+  .form-select:focus{
+      box-shadow: none;
+      border-color: var(--primary-color);
+  }
+  
+  .arabic-dir{
+  direction: rtl;
+  }
+  
+
+
