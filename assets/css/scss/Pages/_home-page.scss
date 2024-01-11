@@ -20,7 +20,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        // background-image: -webkit-gradient(linear, left top, left bottom, from(#212529b8), to(#21252973));
         background-image: linear-gradient(to bottom, #212529b8, #21252973);
         z-index: 2;
     }
@@ -67,8 +66,8 @@
     position: relative;
 
     .title {
-        background-image: url(https://saac.gov.sa/assets/images/logo-back.svg);
-        background-size: cover;
+        background-image: url(../img/logo-back.svg);
+        background-size: contain;
         background-repeat: no-repeat;
         margin-bottom: 20px;
         padding: 9rem 0rem;
@@ -188,16 +187,16 @@
 
     }
     .card-box-one{
-    background-image: url(https://saac.gov.sa/media/iuikfkbr/service.svg);
+    background-image: url(../img/field-4.svg);
     }
     .card-box-two{
-        background-image: url(https://saac.gov.sa/media/jradzhky/maksym-kaharlytskyi-u13zbf4r56a-unsplash.jpeg);
+        background-image: url(../img/field-3.jpeg);
     }
     .card-box-three{
-        background-image: url(https://saac.gov.sa/media/siqjkijl/service2.svg);
+        background-image: url(../img/field-2.svg);
     }
     .card-box-four{
-        background-image: url(https://saac.gov.sa/media/ikcdjifb/%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF-%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%AD-%D8%A7%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%84%D8%A7%D9%84-02.svg);
+        background-image: url(../img/field-1.svg);
     }
     
 }
@@ -317,7 +316,8 @@ img.field-img{
 }
 
 .numbers-center{
-    background-image: url(https://saac.gov.sa/assets/images/curve-img.svg);
+    // background-image: url(https://saac.gov.sa/assets/images/curve-img.svg);
+    background-image: url(../img/curve-img.svg);
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
@@ -394,7 +394,7 @@ img.field-img{
         .owl-nav{
             text-align: center;
             margin: 30px 0px;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 400;
             button[type="button"]{
                 margin-inline-end: 20px;
@@ -402,6 +402,10 @@ img.field-img{
                 &:hover{
                     background-color:var(--text-color-gray);
                     border-radius: 10px;
+                }
+                span{
+                    margin-top: -5px;
+                    display: block;
                 }
             }
         }

@@ -11,7 +11,8 @@ $(window).scroll(function () {
 })
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel").owlCarousel(
+    {
     loop: true,
   margin: 10,
   autoplay: true,
@@ -31,7 +32,8 @@ $(document).ready(function(){
       items: 6,
     },
   },
-  });
+  }
+  );
 });
 
 

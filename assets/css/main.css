@@ -47,7 +47,7 @@ a:hover {
   transition: all 0.8s;
 }
 
-ul {
+ul, p {
   padding: 0px;
   margin: 0px;
 }
@@ -88,7 +88,7 @@ ul {
   padding: 5px 5px;
   margin-right: 0.5rem;
 }
-.login-btn:hover, .login-btn:active {
+.login-btn:hover, .login-btn:active, .login-btn.show {
   color: var(--text-color-white);
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -110,6 +110,10 @@ ul {
   text-align: right;
   font-size: 13px;
   background-color: var(--secondary-color);
+}
+.login-menue .dropdown-item:active {
+  color: var(--text-color-dark);
+  background-color: var(--text-color-white);
 }
 
 .serv-sec .btn {
@@ -137,10 +141,10 @@ header {
 header .navbar {
   box-shadow: none;
 }
-header .navbar-brand img {
+header .navbar .navbar-brand img {
   width: 140px;
 }
-header .navbar-nav .nav-item .nav-link {
+header .navbar .navbar-nav .nav-item .nav-link {
   font-size: 10px;
   color: var(--text-color-white);
   font-weight: bold;
@@ -214,8 +218,8 @@ header.scrolled {
   position: relative;
 }
 .about-center .title {
-  background-image: url(https://saac.gov.sa/assets/images/logo-back.svg);
-  background-size: cover;
+  background-image: url(../img/logo-back.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 20px;
   padding: 9rem 0rem;
@@ -349,16 +353,16 @@ header.scrolled {
   font-weight: 600;
 }
 .fields .card-box-one {
-  background-image: url(https://saac.gov.sa/media/iuikfkbr/service.svg);
+  background-image: url(../img/field-4.svg);
 }
 .fields .card-box-two {
-  background-image: url(https://saac.gov.sa/media/jradzhky/maksym-kaharlytskyi-u13zbf4r56a-unsplash.jpeg);
+  background-image: url(../img/field-3.jpeg);
 }
 .fields .card-box-three {
-  background-image: url(https://saac.gov.sa/media/siqjkijl/service2.svg);
+  background-image: url(../img/field-2.svg);
 }
 .fields .card-box-four {
-  background-image: url(https://saac.gov.sa/media/ikcdjifb/%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF-%D8%AC%D9%87%D8%A7%D8%AA-%D9%85%D9%86%D8%AD-%D8%A7%D9%84%D8%B4%D9%87%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%84%D8%A7%D9%84-02.svg);
+  background-image: url(../img/field-1.svg);
 }
 
 .about-field {
@@ -468,7 +472,7 @@ header.scrolled {
 }
 
 .numbers-center {
-  background-image: url(https://saac.gov.sa/assets/images/curve-img.svg);
+  background-image: url(../img/curve-img.svg);
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
@@ -539,7 +543,7 @@ header.scrolled {
 .organizations .owl-carousel .owl-nav {
   text-align: center;
   margin: 30px 0px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
 }
 .organizations .owl-carousel .owl-nav button[type=button] {
@@ -549,6 +553,10 @@ header.scrolled {
 .organizations .owl-carousel .owl-nav button[type=button]:hover {
   background-color: var(--text-color-gray);
   border-radius: 10px;
+}
+.organizations .owl-carousel .owl-nav button[type=button] span {
+  margin-top: -5px;
+  display: block;
 }
 .organizations img {
   max-width: 100%;

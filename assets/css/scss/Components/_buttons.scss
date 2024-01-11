@@ -10,9 +10,6 @@
 }
 
 
-
-
-
 .login-btn{
     display: flex;
     align-items: center;
@@ -23,7 +20,8 @@
     padding: 5px 5px;
     margin-right: 0.5rem;
     &:hover,
-    &:active{
+    &:active,
+    &.show{
         color: var(--text-color-white);
         background-color:var(--secondary-color);
         border-color: var(--secondary-color);
@@ -49,6 +47,10 @@ right: 0;
 text-align: right;
 font-size: 13px;
 background-color:var(--secondary-color);
+.dropdown-item:active {
+    color: var(--text-color-dark);
+    background-color: var(--text-color-white);
+}
 }
 
 .serv-sec{

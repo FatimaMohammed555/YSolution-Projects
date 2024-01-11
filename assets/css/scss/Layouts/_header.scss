@@ -13,24 +13,22 @@ header {
 
     .navbar{
         box-shadow: none;
+        .navbar-brand {
+            img {
+                width: 140px;
+            }
+        }
+        .navbar-nav{
+            .nav-item {
+                .nav-link{
+                    font-size: 10px;
+                    color: var(--text-color-white);
+                    font-weight: bold;
+                } 
+            }
+        }
     }
     
-    .navbar-brand img {
-        width: 140px;
-    }
-
-
-    // .navbar-nav .nav-item{
-    //     // padding: 0px;
-    //     // margin: 0px;
-    // }
-    .navbar-nav .nav-item .nav-link{
-        // padding: 0px;
-        // margin: 0px;
-        font-size: 10px;
-        color: var(--text-color-white);
-        font-weight: bold;
-    }   
 
 }
 
@@ -40,8 +38,4 @@ header.scrolled {
     padding: 0.7rem 0rem;
 }
 
-// @media only screen and (max-width: 1200px) and (min-width: 992px){
-//     header .nav-item {
-//         margin: 0 4px;
-//     }
-// }
+
