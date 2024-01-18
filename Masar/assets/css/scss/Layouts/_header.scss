@@ -1,0 +1,105 @@
+
+.top-heading{
+    background-color: var( --primary-color);
+    width: 100%;
+    height: 63px;
+    line-height:63px;
+    .left-box{
+        display: flex;
+        align-items: center;
+        span{
+            &:nth-child(1){
+            color: var( --text-color-white);
+            font-size: 20px;
+            font-weight: 600;
+            }
+        }
+        img{
+            &.telephone{
+                width: 17px;
+                height: 15px;
+                margin: 0px 20px 0px 10px;
+            }
+            &.group-one{
+                width: 32px;
+                height: 32px;
+                margin-inline-end: 40px;
+            }
+        }
+
+        .form-switch{
+            margin-inline-end: 40px;
+        }
+        span{
+            &.A{
+                color: var(--text-color-white);
+                font-size: 24px;
+                font-weight: 500;
+                display: block;
+                margin-inline-end: 5px;
+            }
+        }
+    }
+    .right-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: var(--text-color-white);
+            p{
+                &:nth-child(1){
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                &:nth-child(2),
+                &:nth-child(3){
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+    }
+}
+
+.middle-heading{
+.logo-img{
+    text-align: end;
+    img{
+        width: 165.993px;
+        height: 130px;
+    }
+}
+}
+
+hr{
+    // color:var(--text-color-gray);
+    background: rgba(215, 215, 215, 0.83);
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.bottom-heading{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+   
+    .nav{
+        background-color: var(--primary-color);
+        border-radius: 40px;
+        justify-content: space-around;
+        align-items: center;
+        height: 120px;
+
+        .nav-item{
+            .nav-link{
+                text-align: center;
+                p{
+                    color: var(--text-color-white);
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+

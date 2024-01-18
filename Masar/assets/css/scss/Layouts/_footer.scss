@@ -1,0 +1,110 @@
+
+.footer{
+    padding: 50px 0px;
+    height: 577px;
+    background-color: var(--primary-color);
+    // position: relative;
+h3{
+    font-size: var(--h2-font-size);
+    font-weight: 700;
+    color: var(--text-color-white);
+    margin-bottom: 20px;
+}
+ul{
+    li{
+        margin-bottom: 15px;
+        a{
+            color: var(--text-color-white);
+            font-size: var(--footer-links-font-size);
+            font-weight: 500;
+        }
+    }
+}
+
+    // .box-img{
+    //     .clipe-shape{
+    //         right: 0;
+    //             position: absolute;
+    //             bottom: 0;
+    //             background-color: var(--secondary-color);
+    //             // opacity: 0.6;
+    //             clip-path: polygon(80% 0, 100% 0, 100% 100%, 0% 100%);
+    //             width: 30%;
+    //             height: 100%;
+    //             span{
+    //                 position: absolute;
+    //                 left: 10%;
+    //                 bottom: 10%;
+    //                 margin-inline-start: 30px;
+    //             }
+    //     }
+    // }
+
+hr{
+    
+        width: 60%;
+        margin: 15px auto;
+        color: var(--text-color-white);
+        position: absolute;
+    opacity: 1;
+}
+
+.customer-serv{
+    span,p{
+        font-size: var(--footer-links-font-size);
+        font-weight: 500;
+        color: var(--text-color-white);
+    }
+    span{
+        &.only-number{
+            margin-inline-start: 15px;
+            margin-inline-end: 15px;
+        }
+    }
+    svg{
+        &.fa-envelope{
+            font-size: var(--footer-links-font-size);
+            color: var(--text-color-white);
+        }
+    }
+    span{
+        &.mail{
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+        }
+        &.link{
+            a{
+                color: var(--text-color-white);
+                font-size: var(--footer-links-font-size);
+            }
+        }
+    }
+}
+
+.logo{
+    img{
+        &.footer-logo{
+            mix-blend-mode: lighten;
+        }
+    }
+}
+
+
+
+    }
+
+
+    .copy-right{
+        background-color: #E0E0E0;
+        overflow: hidden;
+        padding: 20px 0px;
+p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+    }
+
+
+
+
