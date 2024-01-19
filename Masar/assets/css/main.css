@@ -103,8 +103,9 @@ h2 {
 .top-heading .left-box {
   display: flex;
   align-items: center;
+  justify-content: end;
 }
-.top-heading .left-box span:nth-child(1) {
+.top-heading .left-box span.number {
   color: var(--text-color-white);
   font-size: 20px;
   font-weight: 600;
@@ -132,20 +133,21 @@ h2 {
 .top-heading .right-box {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   color: var(--text-color-white);
 }
-.top-heading .right-box p:nth-child(1) {
+.top-heading .right-box p:nth-child(3) {
   font-size: 18px;
   font-weight: 700;
 }
-.top-heading .right-box p:nth-child(2), .top-heading .right-box p:nth-child(3) {
+.top-heading .right-box p:nth-child(2), .top-heading .right-box p:nth-child(1) {
   font-size: 16px;
   font-weight: 500;
+  margin: 0 15px;
 }
 
 .middle-heading .logo-img {
-  text-align: end;
+  text-align: start;
 }
 .middle-heading .logo-img img {
   width: 165.993px;

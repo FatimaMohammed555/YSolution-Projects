@@ -1,1 +1,76 @@
-/*# sourceMappingURL=main-rtl.css.map */
+body {
+  direction: rtl;
+}
+
+.hero .swiper-group .swiper-box .box-imgs .first-img img.hero-group {
+  position: absolute;
+  right: 35px;
+}
+.hero .swiper-group .swiper-box .box-imgs .hero-logo {
+  right: 35px;
+  width: 100%;
+}
+.hero .swiper-horizontal > .swiper-pagination-bullets,
+.hero .swiper-pagination-bullets.swiper-pagination-horizontal,
+.hero .swiper-pagination-custom,
+.hero .swiper-pagination-fraction {
+  position: relative;
+  z-index: 999;
+  top: -40px;
+  right: -150px;
+}
+.hero .swiper-horizontal > .swiper-pagination-bullets span,
+.hero .swiper-pagination-bullets.swiper-pagination-horizontal span,
+.hero .swiper-pagination-custom span,
+.hero .swiper-pagination-fraction span {
+  background-color: var(--text-color-white);
+}
+
+@media (max-width: 1024px) {
+  .hero .swiper-group .swiper-box .box-imgs .first-img img.hero-group {
+    position: absolute;
+    right: 10px;
+  }
+  .hero .swiper-group .swiper-box .box-imgs .hero-logo {
+    position: absolute;
+    top: 185px;
+    right: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .hero .swiper-horizontal > .swiper-pagination-bullets,
+  .hero .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .hero .swiper-pagination-custom,
+  .hero .swiper-pagination-fraction {
+    top: 5px;
+    right: 0px;
+  }
+  .hero .swiper-horizontal > .swiper-pagination-bullets span,
+  .hero .swiper-pagination-bullets.swiper-pagination-horizontal span,
+  .hero .swiper-pagination-custom span,
+  .hero .swiper-pagination-fraction span {
+    background-color: var(--primary-color);
+  }
+  .hero .finanace {
+    margin-top: 20px;
+  }
+}
+.products {
+  padding: 100px 0;
+  background: linear-gradient(0deg, rgba(178, 178, 178, 0.4) 40.39%, rgba(178, 178, 178, 0) 100%);
+}
+.products .all-content {
+  margin-bottom: 15px;
+}
+.products .all-content .box-img .clipe-shape {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  opacity: 0.6;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%);
+          clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%);
+  width: 50%;
+  height: 60%;
+}/*# sourceMappingURL=main-rtl.css.map */

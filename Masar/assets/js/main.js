@@ -111,7 +111,7 @@ jQuery(document).ready(function($) {
   autoplay: true,
   // dots: true,
     nav: false,
-    // rtl: true,
+    rtl: true,
   navSpeed: 300,
   autoplayHoverPause: true, // Stops autoplay
   responsive: {
